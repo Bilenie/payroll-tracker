@@ -59,10 +59,6 @@ const getRandomEmployee = function(employeesArray) {
   const randomEmployee = employeesArray[randomIndex];
   console.log(`Random employee: ${randomEmployee.firstName} ${randomEmployee.lastName}`);
 };
-// };
-// collectEmployees();
-// displayAverageSalary();
-// getRandomEmployee();
 
 /*
   ====================
