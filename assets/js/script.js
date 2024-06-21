@@ -40,9 +40,9 @@ const displayAverageSalary = function (employeesArray) {
   // TODO: Calculate and display the average salary
   // loop through the employee and provide based on the individual employee and add employee salary to the average.
 let avg = 0;
-for (let index = 0; index<employeesArray.length; index++) {
-const employee = array[index];
-avg += employee.salary 
+for (let index = 0; index < employeesArray.length; index++) {
+const employee = employeesArray[index];
+avg += employee.salary; 
 
 }
 avg = avg / employeesArray.length;
