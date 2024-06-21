@@ -35,27 +35,34 @@ const collectEmployees = function() {
   return employees;
 };
 
-// Display the average salary
-const displayAverageSalary = function (employeesArray) {
-  // TODO: Calculate and display the average salary
-  // loop through the employee and provide based on the individual employee and add employee salary to the average.
-let avg = 0;
-for (let index = 0; index < employeesArray.length; index++) {
-const employee = employeesArray[index];
-avg += employee.salary; 
-
-}
-avg = avg / employeesArray.length;
-
-console.log(`Employee average salary is ${avg}`)
+// Function to display average salary and random employee
+const displayEmployeeData = function(employeesArray) {
+  displayAverageSalary(employeesArray);
+  getRandomEmployee(employeesArray);
 };
 
-// Select a random employee
+// Function to calculate and display average salary
+const displayAverageSalary = function(employeesArray) {
+  let totalSalary = 0;
+
+  for (let index = 0; index < employeesArray.length; index++) {
+    totalSalary += employeesArray[index].salary;
+  }
+
+  const avgSalary = totalSalary / employeesArray.length;
+  console.log(`Employee average salary is ${avgSalary}`);
+};
+
+// Function to select and display a random employee
 const getRandomEmployee = function(employeesArray) {
-  // TODO: Select and display a random employee
-var employee = employeesArray[Math.floor(Math.random()*employeesArray.length)];
-console.log(`Random employee ${employee.firstName} ${employee.lastName}`)
+  const randomIndex = Math.floor(Math.random() * employeesArray.length);
+  const randomEmployee = employeesArray[randomIndex];
+  console.log(`Random employee: ${randomEmployee.firstName} ${randomEmployee.lastName}`);
 };
+// };
+// collectEmployees();
+// displayAverageSalary();
+// getRandomEmployee();
 
 /*
   ====================
