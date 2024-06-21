@@ -32,3 +32,11 @@ N/A
 *Televised description of the Webpage lookes like the following down below.
 ![display of the Webpage](./assets/images/functionality-video.gif)
 *Go to this link "#" to checkout the repo on my GitHub.
+
+##Credit
+
+Thanks to my SSA, Instructor, TA, and classmates for helping. Received feedback and was able to debug.
+
+##License
+
+MIT LICENSE
