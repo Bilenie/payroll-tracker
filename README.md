@@ -22,7 +22,8 @@ N/A
 
 ## Usage
 
-*Go to the deployed link " #" 
+*Go to the deployed link "https://bilenie.github.io/payroll-tracker/" .
+
 ![Live Webpage](./assets/images/Deployed%20page.png)
 
 *Click "Add Employees" Button.
@@ -30,12 +31,17 @@ N/A
 ![Add button](./assets/images/add-button.png)
 
 *A prompt will display. like this.
+
 ![Prompt](./assets/images/prompt.png)
 
 *By following the instruction on the prompt input employee information.The input information should be displayed  like the following image.
+
 ![final output on the Webpage](./assets/images/endresult.png)
+
 *Televised description of the Webpage lookes like the following down below.
+
 ![display of the Webpage](./assets/images/functionality-video.gif)
+
 *Go to this link "https://github.com/Bilenie/payroll-tracker.git" to checkout the repo on my GitHub.
 
 ##Credit
