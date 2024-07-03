@@ -10,33 +10,32 @@ const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects.
 
   while (onGoing) {
-  const first = prompt("employee first name");
-  const last = prompt("employee last name");
-  const salary = prompt("employee salary")
+  const first = prompt("Employee First Name");
+  const last = prompt("Employee Last Name");
+  const salary = prompt("Employee Salary")
 
 // add this as a condition if user input 0 or none. added an alert to inform the user if the entered salary is not numeric.
     
-  if (isNaN(salary)){
-    alert("Salary should be a number. Setting salary to 0.");
-    salary = 0;
-  }else {
-      salary = parseFloat(salary);
-    }
+if (isNaN(salary)){
+ 
+  alert("Salary should be a number.");
+}
 
   //Create employee object
   // parse the salary.
   const employee = {
     firstName: first,
     lastName: last,
-    salary: salary,
+    salary:parseFloat(salary),
   }
 // return an array of employees  objects.
   employees.push(employee);
 // add a confirm to give an option to add(yes/no/cancel/ok).
   onGoing = confirm("would you like to add another employee?");
-}
 
+  }
   return employees;
+
 };
 
 // Function to display average salary and random employee
