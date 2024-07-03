@@ -14,17 +14,21 @@ const collectEmployees = function() {
   const last = prompt("employee last name");
   const salary = prompt("employee salary")
 
-// add this as a condition if user input 0 or none.
+// add this as a condition if user input 0 or none. added an alert to inform the user if the entered salary is not numeric.
+    
   if (isNaN(salary)){
+    alert("Salary should be a number. Setting salary to 0.");
     salary = 0;
-  }
+  }else {
+      salary = parseFloat(salary);
+    }
 
-  // create employee object
+  //Create employee object
   // parse the salary.
   const employee = {
-    firstName:first,
-    lastName:last,
-    salary:parseFloat(salary),
+    firstName: first,
+    lastName: last,
+    salary: salary,
   }
 // return an array of employees  objects.
   employees.push(employee);
